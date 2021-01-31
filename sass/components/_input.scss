@@ -1,0 +1,17 @@
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+  border-color: $accent-color;
+}
+
+textarea[name='comment'] {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+input[name='agreement']:checked + .checkbox__icon {
+  background-image: url(../images/check.svg);
+}

@@ -1,0 +1,40 @@
+.features {
+  line-height: 1.71;
+
+  &__list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    // @extend .icon;
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: $secondary-bg-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__icon .icon {
+    margin: auto;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+  }
+
+  &__description {
+    margin-top: 0px;
+  }
+}

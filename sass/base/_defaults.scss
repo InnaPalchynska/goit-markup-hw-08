@@ -1,0 +1,84 @@
+body {
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  margin: 0px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $secondary-bg-color;
+}
+
+h2 {
+  margin: 0px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: $title-text-color;
+}
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+address {
+  font-style: inherit;
+  color: $primary-bg-color;
+}

@@ -1,0 +1,55 @@
+.subscription {
+  margin-top: 12px;
+
+  &--social {
+    margin-right: 93px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    margin-right: 12px;
+    padding-left: 16px;
+
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  &__button {
+    position: relative;
+    text-align: start;
+    padding-left: 27px;
+  }
+
+  &__button::after {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    transform: translateY(50%);
+    display: block;
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/send.svg);
+    background-size: contain;
+  }
+
+  &__input::placeholder {
+    padding-left: 12px;
+  }
+}

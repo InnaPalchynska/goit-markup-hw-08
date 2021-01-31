@@ -1,0 +1,24 @@
+.checkbox {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkbox.svg);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+
+    transition-property: background-image;
+    transition-duration: $animation-time;
+    transition-timing-function: $animation-timing-function;
+  }
+}

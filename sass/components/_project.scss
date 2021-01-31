@@ -1,0 +1,22 @@
+.project {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+
+  &__title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+  }
+
+  &__descriotion {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}

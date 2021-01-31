@@ -1,0 +1,35 @@
+.work {
+  &-section {
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    @extend %list;
+    margin-top: 50px;
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  &__overlay {
+    display: inline-flex;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    align-items: center;
+  }
+
+  &__description {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    margin: auto;
+  }
+}

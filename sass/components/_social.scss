@@ -1,0 +1,43 @@
+.social {
+  @extend %list;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    @extend .link;
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+
+    transition-property: color background-color;
+    transition-duration: $animation-time;
+    transition-timing-function: $animation-timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+    color: $primary-bg-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    @extend .icon;
+    height: 20px;
+    width: 20px;
+  }
+
+  &__link--dark {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &__icon--light {
+    color: $primary-bg-color;
+  }
+}

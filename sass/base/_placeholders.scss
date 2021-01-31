@@ -1,0 +1,17 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon {
+  display: inline-flex;
+  margin: auto;
+  fill: currentColor;
+}
