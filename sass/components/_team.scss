@@ -6,7 +6,7 @@
 
   &__list {
     @extend %list;
-    display: flex;
+    // display: flex;
   }
 
   &__item {
@@ -18,8 +18,8 @@
   }
 
   &__item:not(:last-child) {
-    margin-left: auto;
-    margin-right: 30px;
+    // margin-left: auto;
+    // margin-right: 30px;
   }
 
   &__title {

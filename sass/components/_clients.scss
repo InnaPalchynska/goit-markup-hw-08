@@ -1,6 +1,6 @@
 .clients {
   @extend %list;
-  display: flex;
+  // display: flex;
 
   &__link {
     @extend .link;
@@ -17,7 +17,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
   }
 
   &__link:hover,
