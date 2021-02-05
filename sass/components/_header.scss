@@ -4,7 +4,11 @@
   .container {
     padding: 16px 15px;
 
-    // display: flex;
-    //   align-items: center;
+    @media screen and(min-width:$tablet) {
+      padding: 26px 15px;
+    }
+
+    display: flex;
+    align-items: center;
   }
 }

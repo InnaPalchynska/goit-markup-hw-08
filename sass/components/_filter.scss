@@ -1,7 +1,15 @@
 .filter {
   @extend %list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;

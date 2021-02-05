@@ -5,23 +5,25 @@
 }
 
 .site-nav {
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
+  }
   @extend %list;
-  text-align: center;
-  display: none;
-  // display: flex;
+  // text-align: center;
+  display: flex;
 
-  // &__item:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 
   &__link {
     @extend .link;
     position: relative;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
-    // display: inline-flex;
+    display: inline-flex;
     display: block;
     color: $title-text-color;
 
@@ -69,6 +71,13 @@
   }
 
   &--contacts {
-    // margin-left: auto;
+    @extend %list;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    &--contacts {
+      display: flex;
+      align-items: center;
+    }
   }
 }

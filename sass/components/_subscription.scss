@@ -50,6 +50,10 @@
   }
 
   @media screen and (min-width: $tablet) {
+    .subscription--social {
+      margin-top: 5px;
+    }
+
     &__input {
       display: block;
       margin-left: auto;
