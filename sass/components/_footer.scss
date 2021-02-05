@@ -3,7 +3,6 @@
   color: $primary-bg-color;
 
   &__container {
-    // display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
@@ -12,8 +11,6 @@
   &__contacts {
     @extend %list;
     margin-top: 20px;
-    margin-bottom: 60px;
-    // margin-right: 72px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
   }
@@ -22,9 +19,25 @@
     margin-bottom: 8px;
   }
 
+  @media screen and (min-width: $tablet) {
+    &__links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
+    &__container {
+      display: flex;
+      text-align: left;
+    }
+
     &__contact:not(:last-child) {
       margin-bottom: 9px;
+    }
+
+    &__contacts {
+      margin-right: 72px;
     }
   }
 }
