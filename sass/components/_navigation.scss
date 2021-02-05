@@ -1,12 +1,13 @@
 .main-nav {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-nav {
   @extend %list;
   text-align: center;
-
+  display: none;
   // display: flex;
 
   // &__item:not(:last-child) {

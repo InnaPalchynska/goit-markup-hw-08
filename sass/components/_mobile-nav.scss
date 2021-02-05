@@ -1,0 +1,14 @@
+.mobile-nav {
+  &__icon {
+    @extend .icon;
+    color: inherit;
+    transition-property: color;
+    transition-duration: $animation-time;
+    transition-timing-function: $animation-timing-function;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    color: $accent-color;
+  }
+}
