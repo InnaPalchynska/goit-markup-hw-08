@@ -11,8 +11,8 @@ h1 {
   margin: 0px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -24,14 +24,15 @@ h2 {
   margin: 0px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 
   color: $title-text-color;
 }
 
 h3 {
+  text-align: center;
   margin: 0px;
 }
 
@@ -60,26 +61,34 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    // width: 1140px;
   }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: $desktop) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .heading {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .overlay {
@@ -93,4 +102,20 @@ img {
 address {
   font-style: inherit;
   color: $primary-bg-color;
+}
+
+@media screen and (min-width: $desktop) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
+  .heading {
+    margin-bottom: 50px;
+  }
 }

@@ -1,11 +1,13 @@
 .clients {
   @extend %list;
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 
   &__link {
     @extend .link;
     display: inline-flex;
-    width: 170px;
+    min-width: 210px;
     height: 90px;
     color: #afb1b8;
     border: 1px solid #afb1b8;
@@ -16,13 +18,24 @@
     transition-timing-function: $animation-timing-function;
   }
 
-  &__item:not(:last-child) {
-    // margin-right: 30px;
+  &__item {
+    margin: 15px;
   }
 
   &__link:hover,
   &__link:focus {
     border: 1px solid $accent-color;
     color: $accent-color;
+  }
+  @media screen and (min-width: $tablet) {
+    &__link {
+      min-width: 226px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__link {
+      min-width: 170px;
+    }
   }
 }

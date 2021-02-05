@@ -1,12 +1,12 @@
-.work {
-  &-section {
-    padding-bottom: 94px;
-  }
+.work-section {
+  display: none;
+}
 
+.work {
   &__list {
     @extend %list;
     margin-top: 50px;
-    // display: flex;
+    display: flex;
   }
 
   &__item {
@@ -31,5 +31,12 @@
     text-transform: uppercase;
     color: $primary-bg-color;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .work-section {
+    display: block;
+    padding-bottom: 94px;
   }
 }

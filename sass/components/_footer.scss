@@ -6,17 +6,25 @@
     // display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
   }
 
   &__contacts {
     @extend %list;
     margin-top: 20px;
-    margin-right: 72px;
+    margin-bottom: 60px;
+    // margin-right: 72px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
   }
 
   &__contact:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__contact:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }
