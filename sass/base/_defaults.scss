@@ -62,26 +62,23 @@ img {
   padding-right: 15px;
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
-    // width: 1140px;
+    max-width: 1200px;
   }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-@media screen and (min-width: $desktop) {
-  .section {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
