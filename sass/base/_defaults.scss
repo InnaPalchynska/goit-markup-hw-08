@@ -70,7 +70,8 @@ img {
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 1200px;
+    // max-width: 1140px;
+    max-width: $desktop;
   }
 }
 

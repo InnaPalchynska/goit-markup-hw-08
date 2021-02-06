@@ -37,18 +37,18 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-      margin: -30px;
+      margin: -15px;
     }
 
     &__item {
-      flex-basis: calc((100% - 4 * 30px) / 2);
-      margin: 30px;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
   }
 
   @media screen and (min-width: $desktop) {
     &__item {
-      flex-basis: calc((100% - 8 * 30px) / 4);
+      flex-basis: calc((100% - 8 * 15px) / 4);
     }
   }
 }

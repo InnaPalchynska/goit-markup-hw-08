@@ -1,15 +1,10 @@
 .main-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .site-nav {
-  @media screen and (max-width: $tablet - 1px) {
-    display: none;
-  }
   @extend %list;
-  // text-align: center;
   display: flex;
 
   &__item:not(:last-child) {
@@ -20,11 +15,10 @@
     @extend .link;
     position: relative;
 
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: inline-flex;
-    display: block;
+
     color: $title-text-color;
 
     font-weight: 500;
@@ -71,13 +65,6 @@
   }
 
   &--contacts {
-    @extend %list;
     margin-left: auto;
-  }
-  @media screen and (min-width: $desktop) {
-    &--contacts {
-      display: flex;
-      align-items: center;
-    }
   }
 }

@@ -1,6 +1,5 @@
 .logo {
   @extend .link;
-  // margin-right: 92px;
 
   font-family: $logo-font-family;
   font-weight: 700;
@@ -16,6 +15,7 @@
 
 @media screen and (min-width: $desktop) {
   .logo {
+    margin-right: 92px;
     font-size: 26px;
     line-height: 1.19;
   }

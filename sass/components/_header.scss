@@ -2,12 +2,6 @@
   border-bottom: 1px solid #ececec;
 
   .container {
-    padding: 16px 15px;
-
-    @media screen and(min-width:$tablet) {
-      padding: 26px 15px;
-    }
-
     display: flex;
     align-items: center;
   }

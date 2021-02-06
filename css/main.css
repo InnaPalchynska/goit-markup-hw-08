@@ -381,7 +381,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -392,7 +392,7 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -416,7 +416,7 @@ address {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   h1 {
     font-size: 44px;
     line-height: 1.36;
@@ -436,7 +436,7 @@ address {
   cursor: pointer;
 }
 
-.site-nav, .site-nav--contacts, .features__list, .work__list, .clients, .team__list, .social, .filter, .portfolio, .footer__contacts {
+.site-nav, .features__list, .work__list, .clients, .team__list, .social, .filter, .portfolio, .footer__contacts {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -455,19 +455,12 @@ address {
 }
 
 .header .container {
-  padding: 16px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .header .container {
-    padding: 26px 15px;
-  }
 }
 
 .hero {
@@ -501,9 +494,9 @@ address {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    max-width: 1200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/optimisized-jpg/hero__desktop.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/optimisized-jpg/hero__desktop.jpg");
     padding-top: 200px;
@@ -528,8 +521,9 @@ address {
   color: #2196f3;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
+    margin-right: 92px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -539,9 +533,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -553,22 +544,17 @@ address {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    display: none;
-  }
-}
-
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-nav__link {
   position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  display: block;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -613,17 +599,6 @@ address {
 
 .site-nav--contacts {
   margin-left: auto;
-}
-
-@media screen and (min-width: 1600px) {
-  .site-nav--contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .button {
@@ -691,37 +666,43 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
   .features__item {
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
-        flex-basis: calc((100% - 4 * 30px) / 2);
-    margin: 30px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .features__item {
-    -ms-flex-preferred-size: calc((100% - 8 * 30px) / 4);
-        flex-basis: calc((100% - 8 * 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
   }
 }
 
 .work-section {
   display: none;
+  padding-bottom: 94px;
 }
 
 .work__list {
+  margin: -15px;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .work__item {
   position: relative;
-  margin-left: auto;
-  margin-right: 30px;
+  -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+      flex-basis: calc((100% - 6 * 15px) / 3);
+  margin: 15px;
 }
 
 .work__overlay {
@@ -746,10 +727,9 @@ address {
   margin: auto;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .work-section {
     display: block;
-    padding-bottom: 94px;
   }
 }
 
@@ -795,7 +775,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
     min-width: calc((100% - 12 * 15px) / 6);
   }
@@ -840,19 +820,19 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
   .team__item {
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
-        flex-basis: calc((100% - 4 * 30px) / 2);
-    margin: 30px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100% - 8 * 30px) / 4);
-        flex-basis: calc((100% - 8 * 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
   }
 }
 
@@ -1154,7 +1134,6 @@ input[name='agreement']:checked + .checkbox__icon {
 }
 
 .portfolio__item {
-  width: 100%;
   background-color: #ffffff;
   margin-bottom: 30px;
   margin-right: auto;
@@ -1177,20 +1156,20 @@ input[name='agreement']:checked + .checkbox__icon {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
   .portfolio__item {
-    width: calc((100% - 4 * 30px) / 2);
-    margin: 30px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .portfolio {
     margin-top: 50px;
   }
   .portfolio__item {
-    width: calc((100% - 6 * 30px) / 3);
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
@@ -1293,7 +1272,7 @@ input[name='agreement']:checked + .checkbox__icon {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1382,7 +1361,7 @@ input[name='agreement']:checked + .checkbox__icon {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .subscription {
     margin-top: 12px;
   }
