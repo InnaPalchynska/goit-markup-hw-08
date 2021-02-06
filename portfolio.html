@@ -84,16 +84,57 @@
           <ul class="portfolio">
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  srcset="
-                    ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg   450w,
-                    ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab.jpg   354w,
-                    ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk.jpg 370w
-                  "
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg"
-                  alt="Изображение сайта"
-                  sizes="(min-width: $desktop) 370w, (min-width: $tablet) 354w, (min-width: $mobile) 450w "
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__1__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__1__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__1__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__1__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__1__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__1__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg "
+                    alt="Изображение сайта"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -109,10 +150,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__2__mob.jpg"
-                  alt="Постер"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__2__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__2__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__2__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__2__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__2__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__2__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__2__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__2__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__2__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__2__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__2__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__2__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__2__mob.jpg "
+                    alt="Постер"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -128,10 +216,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__3__mob.jpg"
-                  alt="Логотип ресторана"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__3__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__3__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__3__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__3__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__3__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__3__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__3__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__3__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__3__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__3__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__3__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__3__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__3__mob.jpg "
+                    alt="Логотип ресторана"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -147,10 +282,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__4__mob.jpg"
-                  alt="Наушники"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__4__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__4__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__4__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__4__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__4__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__4__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__4__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__4__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__4__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__4__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__4__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__4__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__4__mob.jpg "
+                    alt="Наушники"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -166,10 +348,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__5__mob.jpg"
-                  alt="Коробки"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__5__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__5__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__5__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__5__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__5__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__5__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__5__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__5__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__5__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__5__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__5__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__5__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__5__mob.jpg "
+                    alt="Коробки"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -185,10 +414,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__6__mob.jpg"
-                  alt="Монитор"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__6__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__6__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__6__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__6__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__6__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__6__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__6__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__6__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__6__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__6__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__6__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__6__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__6__mob.jpg "
+                    alt="Монитор"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -204,10 +480,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__7__mob.jpg"
-                  alt="Журнал"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__7__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__7__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__7__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__7__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__7__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__7__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__7__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__7__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__7__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__7__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__7__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__7__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__7__mob.jpg "
+                    alt="Монитор"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -223,10 +546,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__8__mob.jpg"
-                  alt="Бирка"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__8__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__8__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__8__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__8__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__8__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__8__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__8__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__8__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__8__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__8__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__8__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__8__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__8__mob.jpg "
+                    alt="Бирка"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения
@@ -242,10 +612,57 @@
             </li>
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
-                <img
-                  src="./images/portfolio/optimisized-jpg/mob/portfolio__9__mob.jpg"
-                  alt="Ноутбук"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/desk/portfolio__9__desk.webp    1x,
+                      ./images/portfolio/optimisized-webp/desk/portfolio__9__desk@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__9__desk.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/desk/portfolio__9__desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/tab/portfolio__9__tab.webp    1x,
+                      ./images/portfolio/optimisized-webp/tab/portfolio__9__tab@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__9__tab.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/tab/portfolio__9__tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-webp/mob/portfolio__9__mob.webp    1x,
+                      ./images/portfolio/optimisized-webp/mob/portfolio__9__mob@2x.webp 2x
+                    "
+                    media="(min-width: 480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__9__mob.jpg    1x,
+                      ./images/portfolio/optimisized-jpg/mob/portfolio__9__mob@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__9__mob.jpg "
+                    alt="Ноутбук"
+                  />
+                </picture>
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
                     Технокряк это современная площадка распространения

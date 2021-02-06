@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Шапка сайта  -->
+    <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
         <nav class="main-nav">
@@ -31,7 +31,7 @@
           </ul>
         </nav>
         <ul class="site-nav site-nav--contacts">
-          <li class="site-nav__item">
+          <li class="site-nav__item--contacts">
             <a
               class="site-nav__link site-nav__link--contacts"
               href="mailto:info@devstudio.com"
@@ -42,7 +42,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="site-nav__item">
+          <li class="site-nav__item--contacts">
             <a
               class="site-nav__link site-nav__link--contacts"
               href="tel:+380961111111"
@@ -129,12 +129,21 @@
           <ul class="work__list">
             <li class="work__item">
               <a class="link" href="">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Разработка сценариев"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/optimisized-jpg/work__1.jpg    1x,
+                      ./images/work/optimisized-jpg/work__1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/work/optimisized-jpg/work__1.jpg"
+                    alt="Разработка сценариев"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="work__overlay overlay">
                   <p class="work__description">Десктопные приложения</p>
                 </div>
@@ -142,12 +151,21 @@
             </li>
             <li class="work__item">
               <a class="link" href="">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Адаптивная верстка"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/optimisized-jpg/work__2.jpg    1x,
+                      ./images/work/optimisized-jpg/work__2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/work/optimisized-jpg/work__2.jpg"
+                    alt="Адаптивная верстка"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="work__overlay overlay">
                   <p class="work__description">Мобильные приложения</p>
                 </div>
@@ -155,12 +173,21 @@
             </li>
             <li class="work__item">
               <a class="link" href="">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Цветокоррекция"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/optimisized-jpg/work__3.jpg    1x,
+                      ./images/work/optimisized-jpg/work__3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/work/optimisized-jpg/work__3.jpg"
+                    alt="Цветокоррекция"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="work__overlay overlay">
                   <p class="work__description">Дизайнерские решения</p>
                 </div>
@@ -175,12 +202,58 @@
           <h2 class="heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/team/optimisized-jpg/team__1__mob.jpg"
-                alt="фото Игоря Демьяненко"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__1__desk.webp   1x,
+                    ../images/team/optimisized-webp/team__1__mob@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__1__desk.jpg    1x,
+                    ../images/team/optimisized-jpg/team__1__desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__1__tab.webp    1x,
+                    ../images/team/optimisized-webp/team__1__tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__1__tab.jpg    1x,
+                    ../images/team/optimisized-jpg/team__1__tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__1__mob.webp    1x,
+                    ../images/team/optimisized-webp/team__1__mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__1__mob.jpg    1x,
+                    ../images/team/optimisized-jpg/team__1__mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="../images/team/optimisized-jpg/team__1__mob.jpg"
+                  alt="фото Игоря Демьяненко"
+                />
+              </picture>
+
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__description">Product Designer</p>
               <ul class="social">
@@ -215,12 +288,57 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/optimisized-jpg/team__2__mob.jpg"
-                alt="фото Ольги Репиной"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__2__desk.webp    1x,
+                    ../images/team/optimisized-webp/team__2__desk@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__2__desk.jpg    1x,
+                    ../images/team/optimisized-jpg/team__2__desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__2__tab.webp    1x,
+                    ../images/team/optimisized-webp/team__2__tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__2__tab.jpg    1x,
+                    ../images/team/optimisized-jpg/team__2__tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__2__mob.webp    1x,
+                    ../images/team/optimisized-webp/team__2__mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__2__mob.jpg    1x,
+                    ../images/team/optimisized-jpg/team__2__mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="../images/team/optimisized-jpg/team__2__mob.jpg"
+                  alt="фото Ольги Репиной"
+                />
+              </picture>
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__description">Frontend Developer</p>
               <ul class="social">
@@ -255,12 +373,57 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/optimisized-jpg/team__3__mob.jpg"
-                alt="фото Николая Тарасова"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__3__desk.webp    1x,
+                    ../images/team/optimisized-webp/team__3__desk@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__3__desk.jpg    1x,
+                    ../images/team/optimisized-jpg/team__3__desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__3__tab.webp    1x,
+                    ../images/team/optimisized-webp/team__3__tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__3__tab.jpg    1x,
+                    ../images/team/optimisized-jpg/team__3__tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__3__mob.webp    1x,
+                    ../images/team/optimisized-webp/team__3__mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__3__mob.jpg    1x,
+                    ../images/team/optimisized-jpg/team__3__mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="../images/team/optimisized-jpg/team__3__mob.jpg"
+                  alt="фото Николая Тарасова"
+                />
+              </picture>
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__description">Marketing</p>
               <ul class="social">
@@ -295,12 +458,57 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/optimisized-jpg/team__4__mob.jpg"
-                alt="фото Михаила Ермакова"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__4__desk.webp    1x,
+                    ../images/team/optimisized-webp/team__4__desk@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__4__desk.jpg    1x,
+                    ../images/team/optimisized-jpg/team__4__desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__4__tab.webp    1x,
+                    ../images/team/optimisized-webp/team__4__tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__4__tab.jpg    1x,
+                    ../images/team/optimisized-jpg/team__4__tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-webp/team__4__mob.webp    1x,
+                    ../images/team/optimisized-webp/team__4__mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/optimisized-jpg/team__4__mob.jpg    1x,
+                    ../images/team/optimisized-jpg/team__4__mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/optimisized-jpg/team__4__mob.jpg"
+                  alt="фото Михаила Ермакова"
+                />
+              </picture>
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__description">UI Designer</p>
               <ul class="social">

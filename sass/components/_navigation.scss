@@ -5,7 +5,7 @@
 
 .site-nav {
   @extend %list;
-  display: flex;
+  display: none;
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -22,7 +22,7 @@
     color: $title-text-color;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
@@ -66,5 +66,39 @@
 
   &--contacts {
     margin-left: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    &--contacts {
+      flex-direction: column;
+    }
+
+    &__link--contacts {
+      padding: 0px;
+    }
+
+    &__item--contacts:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and(min-width: $desktop) {
+    &--contacts {
+      flex-direction: row;
+    }
+
+    &__item--contacts::not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+
+    &__item--contacts:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 30px;
+    }
   }
 }

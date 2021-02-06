@@ -13,6 +13,12 @@
   color: $accent-color;
 }
 
+@media screen and (min-width: $tablet) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: $desktop) {
   .logo {
     margin-right: 92px;
