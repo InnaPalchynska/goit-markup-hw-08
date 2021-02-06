@@ -84,8 +84,14 @@
             <li tabindex="0" class="portfolio__item">
               <div class="thumb">
                 <img
+                  srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg   450w,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab.jpg   354w,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk.jpg 370w
+                  "
                   src="./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg"
                   alt="Изображение сайта"
+                  sizes="(min-width: $desktop) 370w, (min-width: $tablet) 354w, (min-width: $mobile) 450w "
                 />
                 <div class="thumb__overlay overlay">
                   <p class="thumb__description">
