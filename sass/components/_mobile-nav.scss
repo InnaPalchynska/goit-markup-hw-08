@@ -1,14 +1,113 @@
-.mobile-nav {
-  &__icon {
-    @extend .icon;
-    color: inherit;
-    transition-property: color;
-    transition-duration: $animation-time;
-    transition-timing-function: $animation-timing-function;
+// .mobile-nav {
+//   &__icon {
+//     @extend .icon;
+//     color: inherit;
+//     transition-property: color;
+//     transition-duration: $animation-time;
+//     transition-timing-function: $animation-timing-function;
+//   }
+
+//   &__icon:hover,
+//   &__icon:focus {
+//     color: $accent-color;
+//   }
+// }
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.mobile-menu .content {
+  height: 100%;
+  background-color: #fff;
+  width: 70%;
+
+  transform: translateX(-100%);
+
+  transition: transform 250ms linear 250ms;
+}
+
+.mobile-menu.is-open .content {
+  transform: translateX(0);
+}
+
+.menu-container {
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
   }
 
-  &__icon:hover,
-  &__icon:focus {
-    color: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
   }
+}
+
+.navigation,
+.contacts {
+  height: 50px;
+  width: 140px;
+}
+
+.navigation {
+  outline: 1px solid teal;
+}
+
+.contacts {
+  outline: 1px solid orange;
 }
