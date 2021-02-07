@@ -319,6 +319,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.body--mobile.is-open {
+  overflow: hidden;
+}
+
 h1 {
   margin: 0px;
   font-weight: 900;
@@ -767,17 +771,21 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  font-weight: 200;
+  color: rgba(33, 33, 33, 0.2);
 }
 
 .mobile-nav__link--social {
   font-size: 18px;
   line-height: 1.22;
   color: #2196f3;
-  margin-right: 20px;
-}
-
-.mobile-nav__item--social:not(:last-child) {
-  margin-right: 20px;
 }
 
 .mobile-nav.is-open {
@@ -1413,6 +1421,10 @@ input[name='agreement']:checked + .checkbox__icon {
 .portfolio__item:focus .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+img {
+  z-index: -1;
 }
 
 .project {

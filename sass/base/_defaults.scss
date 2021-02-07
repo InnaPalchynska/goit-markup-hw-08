@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.body--mobile.is-open {
+  overflow: hidden;
+}
+
 h1 {
   margin: 0px;
 
