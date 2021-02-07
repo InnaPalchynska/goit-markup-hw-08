@@ -1,8 +1,9 @@
 .main-nav {
-  width: 100%;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 80px;
 }
 
@@ -49,7 +50,7 @@
     position: absolute;
     z-index: 1;
     left: 0;
-    bottom: -1px;
+    bottom: -2px;
 
     display: block;
     width: 100%;

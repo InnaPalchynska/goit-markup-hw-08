@@ -8,23 +8,24 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="main-nav">
-          <a class="logo" href="./index.html"
+          <a class="logo logo--header" href="./index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
           <button
             type="button mobile-nav"
-            class="menu-button"
+            class="mobile-nav__button"
             aria-expanded="false"
             aria-controls="menu-container"
             data-menu-button
           >
             <svg
+              class="mobile-nav__icon"
               width="40"
               height="40"
-              aria-label="Переключатель мобильного меню"
+              aria-label="Мобильное меню"
             >
               <use
                 class="icon-close"
@@ -37,11 +38,75 @@
             </svg>
           </button>
 
-          <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation"></div>
-            <div class="contacts"></div>
+          <div class="mobile-nav" data-menu>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a
+                  class="mobile-nav__link mobile-nav__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-nav__contacts">
+              <ul class="mobile-nav__list mobile-nav__list--contacts">
+                <li class="mobile-nav__item">
+                  <a
+                    class="mobile-nav__link mobile-nav__link--tel"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-nav__item">
+                  <a
+                    class="mobile-nav__link mobile-nav__link--mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-nav__list mobile-nav__list--social">
+                <li>
+                  <a
+                    class="mobile-nav__link mobile-nav__link--social"
+                    href="http://"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-nav__link mobile-nav__link--social"
+                    href="http://"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-nav__link mobile-nav__link--social"
+                    href="http://"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-nav__link mobile-nav__link--social"
+                    href="http://"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-
           <ul class="site-nav">
             <li class="site-nav__item">
               <a
@@ -58,6 +123,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="site-nav site-nav--contacts">
           <li class="site-nav__item--contacts">
             <a
@@ -83,7 +149,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Герой -->
       <section class="hero">
@@ -622,7 +688,7 @@
         <div class="modal">
           <button class="modal__btn-close" data-modal-close>
             <svg class="icon" width="11" height="11">
-              <use href="./images/symbol-defs.svg#icon-close"></use>
+              <use href="./images/symbol-defs.svg#icon-modal-close"></use>
             </svg>
           </button>
 
