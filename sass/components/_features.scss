@@ -44,6 +44,10 @@
       margin: -15px;
     }
 
+    &__title {
+      text-align: left;
+    }
+
     &__item {
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;

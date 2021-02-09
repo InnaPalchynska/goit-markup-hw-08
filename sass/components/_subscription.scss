@@ -1,5 +1,5 @@
 .subscription {
-  margin-top: 60px;
+  // margin-top: 60px;
 
   &__title {
     margin-bottom: 20px;
@@ -49,8 +49,12 @@
     padding-left: 12px;
   }
 
+  &--social {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: $tablet) {
-    .subscription--social {
+    &--social {
       margin-top: 5px;
     }
 
@@ -67,7 +71,9 @@
 
     &--social {
       margin-right: 93px;
+      margin-bottom: 0px;
     }
+
     &__input {
       display: inline;
       margin-right: 12px;

@@ -468,11 +468,11 @@ address {
 }
 
 .hero {
-  max-width: 480px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/optimisized-jpg/hero__mob.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/optimisized-jpg/hero__mob.jpg");
-  background-color: #c4c4c4;
   background-size: 480px 400px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: auto;
@@ -500,7 +500,6 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/optimisized-jpg/hero__tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/optimisized-jpg/hero__tablet.jpg");
     background-size: 768px 400px;
@@ -889,6 +888,9 @@ address {
         flex-wrap: wrap;
     margin: -15px;
   }
+  .features__title {
+    text-align: left;
+  }
   .features__item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
@@ -1118,6 +1120,13 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1407,9 +1416,6 @@ input[name='agreement']:checked + .checkbox__icon {
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio {
-    margin-top: 50px;
-  }
   .portfolio__item {
     width: calc((100% - 6 * 15px) / 3);
   }
@@ -1496,6 +1502,7 @@ input[name='agreement']:checked + .checkbox__icon {
 
 .footer__contacts {
   margin-top: 20px;
+  margin-bottom: 60px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1526,11 +1533,8 @@ input[name='agreement']:checked + .checkbox__icon {
   }
   .footer__contacts {
     margin-right: 72px;
+    margin-bottom: 0px;
   }
-}
-
-.subscription {
-  margin-top: 60px;
 }
 
 .subscription__title {
@@ -1591,8 +1595,12 @@ input[name='agreement']:checked + .checkbox__icon {
   padding-left: 12px;
 }
 
+.subscription--social {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
-  .subscription .subscription--social {
+  .subscription--social {
     margin-top: 5px;
   }
   .subscription__input {
@@ -1609,6 +1617,7 @@ input[name='agreement']:checked + .checkbox__icon {
   }
   .subscription--social {
     margin-right: 93px;
+    margin-bottom: 0px;
   }
   .subscription__input {
     display: inline;
