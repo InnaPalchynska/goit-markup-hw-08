@@ -470,7 +470,7 @@ address {
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/optimisized-jpg/hero__mob.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/optimisized-jpg/hero__mob.jpg");
-  background-size: 480px 400px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding-top: 118px;
@@ -502,7 +502,7 @@ address {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/optimisized-jpg/hero__tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/optimisized-jpg/hero__tablet.jpg");
-    background-size: 768px 400px;
+    background-size: cover;
   }
 }
 
@@ -518,7 +518,7 @@ address {
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/optimisized-jpg/hero__desktop.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/optimisized-jpg/hero__desktop.jpg");
-    background-size: 1600px 600px;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
   }
